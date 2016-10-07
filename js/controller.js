@@ -1,11 +1,7 @@
 (function () {
     'use strict';
 
-    const routes = {
-        '#/home' : '/partials/home.html',
-        '#/contact' : '/partials/contact.html',
-        '#/projects' : '/partials/projects.html'
-    }
+    const routes = window.routes;
 
     var payLoad =  function (e) {
         const http = new XMLHttpRequest();

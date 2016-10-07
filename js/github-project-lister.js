@@ -15,7 +15,7 @@
                                 <a href="${repo.clone_url}">
                                     <h3>${repo.name}
                                         <small>
-                                            stars : <b>${repo.stargazers_count}</b>
+                                            <img src="/img/glyphicons_free/glyphicons/png/glyphicons-50-star.png" alt="stars" /> <b>${repo.stargazers_count}</b>
                                         </small>
                                     </h3>
                                 </a>
