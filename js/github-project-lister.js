@@ -1,0 +1,35 @@
+(function() {
+    "use strict"
+
+    var listProjects = function () {
+        const http = new XMLHttpRequest();
+        const projectsEl = document.getElementById('projects');
+
+        http.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                const list = JSON.parse(this.responseText);
+                list.map( function (repo) {
+                    if (repo.fork !== true) {
+                        projectsEl.innerHTML += `
+                            <li>
+                                <a href="${repo.clone_url}">
+                                    <h3>${repo.name}
+                                        <small>
+                                            stars : <b>${repo.stargazers_count}</b>
+                                        </small>
+                                    </h3>
+                                </a>
+                                <br />
+                                <p>${repo.description}</p>
+                            </li>
+                        `;
+                    }
+                })
+            }
+        };
+        http.open('GET', 'https://api.github.com/users/shantanu69/repos', true);
+        http.send();
+    }
+
+    listProjects();
+})();

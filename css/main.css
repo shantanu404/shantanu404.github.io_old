@@ -86,6 +86,28 @@ article h1 {
     width: 100%;
 }
 
+article h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+
+    border-bottom: 0.2em solid grey;
+    padding: 0.3em;
+    margin: 0;
+}
+
+article ul {
+    list-style-type: none
+}
+
+article h3 small {
+    color: grey;
+    float: right;
+}
+
+article h3 small b {
+    font-size: 1.5em;
+}
+
 article p {
     width: 100%;
     padding: 0.5em;
@@ -95,4 +117,13 @@ article p {
     font-size: 1.3em;
     line-height: 1.5em;
     text-align: justify;
+}
+
+article ul p {
+    border-left: 1px solid lightgrey;
+    text-indent: 1em;
+}
+
+article a {
+    text-decoration: none;
 }
