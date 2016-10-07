@@ -52,6 +52,14 @@ body {
     transition: background-color 250ms ease-in;
 }
 
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-item.active {
+    background-color: grey;
+}
+
 .nav-item:hover {
     background-color: grey;
 }
