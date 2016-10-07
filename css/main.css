@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:light|Raleway:regular|Montserrat");
+@import url("/fonts/Montserrat.css");
+@import url("/fonts/Nunito-light.css");
+@import url("/fonts/Raleway-regular.css");
 
 * {
     box-sizing: border-box;
@@ -38,7 +40,6 @@ body {
     margin-top: 0;
     margin-left: 0.1em;
     padding: 0.5em;
-    border: 0.15em solid white;
 
     width: 8em;
     height: 100%;
@@ -47,9 +48,7 @@ body {
 
     color: #FFFFFF;
 
-    border-radius: 5px;
-
-    transition: background-color 250ms ease-in;
+    transition: * 250ms ease-in;
 }
 
 .nav-item a {
@@ -58,6 +57,8 @@ body {
 
 .nav-item.active {
     background-color: grey;
+    border-bottom: 0.2em solid white;
+    color: black;
 }
 
 .nav-item:hover {

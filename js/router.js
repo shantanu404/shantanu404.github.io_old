@@ -2,7 +2,6 @@
     'use strict';
 
     const routes = {
-        '/' : '/partials/home.html',
         '#/home' : '/partials/home.html',
         '#/contact' : '/partials/contact.html',
         '#/projects' : '/partials/projects.html'
